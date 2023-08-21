@@ -4,9 +4,8 @@ Informe ao usuário (alguém que não sabe nada sobre este projeto!) tudo que
 ele/ela precisa saber. Os comentários devem incluir, pelo menos:
 ------------------------------------------------------------------------
 
-TÍTULO DO PROJETO:
-OBJETIVO DO PROJETO:
-VERSÃO ou DATA:
-COMO INICIAR O PROJETO:
-AUTORES:
-INSTRUÇÕES PARA O USUÁRIO:
+TÍTULO DO PROJETO: Exercícios
+OBJETIVO DO PROJETO: Realizar o passo-a-passo
+VERSÃO ou DATA: 25/08/23
+AUTORES: Rafael Machado, Lucas Bianchessi e Otávio Senna
+
