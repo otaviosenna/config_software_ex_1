@@ -45,7 +45,7 @@ public class Main {
         System.out.println("e) Método que retorna a união de l1 e l2");
         System.out.println("");
         
-        // Aqui vai a chamada do método
+        RetornaUniao.uniao(l1, l2);
         
         System.out.println("");
         
