@@ -1,3 +1,4 @@
+import java.util.Scanner;
 import java.util.ArrayList;
 
 public class Main {
@@ -60,15 +61,107 @@ public class Main {
         System.out.println("f) Método que retorna a intersecção de l1 e l2");
         System.out.println("");
         
-
-        
         ArrayList<String> intersecao = Intersec.intersect(frutas1, frutas2);
 
         System.out.println("Interseção das listas de frutas:");
         for (String fruta : intersecao) {
-            System.out.println(fruta);
+            System.out.println(fruta);    
         }
+
+            Scanner entradas = new Scanner(System.in);
         
+        System.out.println("Digite a moeda a ser convertida: "); 
+    
+        String moedaOriginal = entradas.nextLine();
+
+        System.out.println("Digite o valor a ser convertido: "); 
+    
+        double valorOriginal = entradas.nextInt();
+
+        System.out.println("Digite a moeda para qual você quer converter: "); 
+        
+        entradas.nextLine();
+        
+        String moedaTarget = entradas.nextLine();
+        
+        double conversao = 0;
+        
+        
+        switch(moedaOriginal){
+            case "BRL":
+                switch(moedaTarget) {
+                    case "BRL": 
+                        conversao = valorOriginal;
+                        System.out.println("Sua conversão deu: " + conversao + "BRL");
+                        break;
+                        
+                    case "USD": 
+                        conversao = (valorOriginal * 0.18);
+                        System.out.println("Sua conversão deu: " + conversao + "USD");
+                        break;
+                        
+                    case "EUR": 
+                        conversao = (valorOriginal * 0.15);
+                        System.out.println("Sua conversão deu: " + conversao + "EUR");
+                        break;
+                        
+                    default:
+                        System.out.println("Você não escolheu uma moeda de conversão aceitável");
+                        break;
+                    }
+                break; 
+                
+            case "USD":    
+                switch(moedaTarget) {
+                    case "BRL": 
+                        conversao = (valorOriginal / 0.18);
+                        System.out.println("Sua conversão deu: " + conversao + "BRL");
+                        break;
+                        
+                    case "USD": 
+                        conversao = (valorOriginal);
+                        System.out.println("Sua conversão deu: " + conversao + "USD");
+                        break;
+                        
+                    case "EUR": 
+                        conversao = (valorOriginal / 0.84);
+                        System.out.println("Sua conversão deu: " + conversao + "EUR");
+                        break;
+                        
+                    default:
+                        System.out.println("Você não escolheu uma moeda de conversão aceitável");
+                        break;
+                    }
+                break;         
+        
+            case "EUR":    
+                switch(moedaTarget) {
+                    case "BRL": 
+                        conversao = (valorOriginal / 0.15);
+                        System.out.println("Sua conversão deu: " + conversao + "BRL");
+                        break;
+                        
+                    case "USD": 
+                        conversao = (valorOriginal * 0.84);
+                        System.out.println("Sua conversão deu: " + conversao + "USD");
+                        break;
+                        
+                    case "EUR": 
+                        conversao = (valorOriginal);
+                        System.out.println("Sua conversão deu: " + conversao + "EUR");
+                        break;
+                        
+                    default:
+                        System.out.println("Você não escolheu uma moeda de conversão aceitável");
+                        break;
+                    }
+                break;  
+            
+            default: 
+            System.out.println("Você não escolheu uma moeda de conversão aceitável");
+            break;
+        }
+
          
     }
 }
