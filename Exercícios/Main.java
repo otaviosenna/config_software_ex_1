@@ -3,6 +3,8 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
+        System.out.println("Teste de alguma coisa na outra linha");
+
         System.out.println("a) Método que retorna quantas ocorrências de um elemento estão na lista:");
         System.out.println("");
         ArrayList<String> frutas1 = FrutasList1.getFrutas();
@@ -69,6 +71,8 @@ public class Main {
             System.out.println(fruta);
         }
         
-         
+        System.out.println("Teste de alguma coisa na última linha");  
+        
+
     }
 }
