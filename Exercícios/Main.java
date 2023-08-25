@@ -45,14 +45,22 @@ public class Main {
         System.out.println("e) Método que retorna a união de l1 e l2");
         System.out.println("");
         
-        RetornaUniao.uniao(l1, l2);
+        ArrayList<String> frutas2 = FrutasList2.getFrutas();
+        
+        ArrayList<String> uniao = Union.union(frutas1, frutas2);
+
+        System.out.println("União das listas de frutas:");
+        
+        for (String fruta : uniao) {
+            System.out.println(fruta);
+        }    
         
         System.out.println("");
         
         System.out.println("f) Método que retorna a intersecção de l1 e l2");
         System.out.println("");
         
-        ArrayList<String> frutas2 = FrutasList2.getFrutas();
+
         
         ArrayList<String> intersecao = Intersec.intersect(frutas1, frutas2);
 
