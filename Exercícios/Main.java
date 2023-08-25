@@ -1,3 +1,4 @@
+import java.util.Scanner;
 import java.util.ArrayList;
 
 public class Main {
@@ -62,17 +63,14 @@ public class Main {
         System.out.println("f) Método que retorna a intersecção de l1 e l2");
         System.out.println("");
         
-
-        
         ArrayList<String> intersecao = Intersec.intersect(frutas1, frutas2);
 
         System.out.println("Interseção das listas de frutas:");
         for (String fruta : intersecao) {
-            System.out.println(fruta);
+            System.out.println(fruta);    
         }
-        
-        System.out.println("Teste de alguma coisa na última linha");  
-        
 
+         Scanner entradas = new Scanner(System.in);
+         
     }
 }
