@@ -1,8 +1,10 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Math;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Teste no começo do código");
 
         System.out.println("Teste de alguma coisa na outra linha");
 
@@ -71,6 +73,6 @@ public class Main {
         }
 
          Scanner entradas = new Scanner(System.in);
-         
+         System.out.println("Teste no fim do código");
     }
 }
