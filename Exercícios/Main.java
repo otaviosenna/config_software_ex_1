@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.;
 
 public class Main {
     public static void main(String[] args) {
@@ -70,7 +71,7 @@ public class Main {
             System.out.println(fruta);    
         }
 
-         Scanner entradas = new Scanner(System.in);
+        System.out.println("Teste no final, outro!");
          
     }
 }
